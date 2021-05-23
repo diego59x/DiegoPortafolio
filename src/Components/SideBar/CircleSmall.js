@@ -4,7 +4,7 @@ export default function CirclePrincipal({
     text, 
     header,
     dimension,
-    circle,
+    onClick
 }){
 
     return(
@@ -13,7 +13,7 @@ export default function CirclePrincipal({
                 {text}
             </div>
             <h1 className="headerCircleTwo"></h1>
-            <button class="btn-5">{header}</button>
+            <button class="btn-5" onClick={onClick}>{header}</button>
         </div>
     );
 }
