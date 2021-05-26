@@ -1,8 +1,6 @@
 .dimensionCircleTwo {
-    position: relative;
-    width: 150px;
-    height: 150px;
-    margin: 25px;
+    width: 25vw;
+    height: 25vh;
 }
 
 /* linear-gradient(to right, #ff4e50, #f9d423); */
@@ -29,8 +27,6 @@
 .headerCircleTwo{
     position: absolute;
     display: inline-block;
-
-    
     top: 45%;
     left: 55%;
     color: white;
@@ -86,11 +82,9 @@ button:hover {
   .btn-5::after {
     background-color: white;
     height: 100%;
-    left: -35%;
-    top: 0;
     transform: skew(45deg);
     transition-duration: 0.6s;
-    transform-origin: top left;
+    transform-origin: left;
     width: 0;
   }
   
@@ -100,4 +94,38 @@ button:hover {
   }
 
 
+  @media (min-height: 768px) {
+    .dimensionCircleTwo {
+      width: 22vw;
+      height: 32vh;
+    }
+    .btn-5::after {
+      transform-origin: left;
+      margin-top: -38vh;
+    }
+    .btn-5:hover:after {
+      height: 100vh;
+      width: 100vw;
+    }
+  }
+
+@media (min-width: 1440px) {
+  .dimensionCircleTwo {
+    width: 12vw;
+    height: 32vh;
+    margin-left: 20vw;
+  }
+  .dimensionCircleTwo {
+    width: 22vw;
+    height: 32vh;
+  }
+  .btn-5::after {
+    transform-origin: left;
+    margin-top: -15vh;
+  }
+  .btn-5:hover:after {
+    height: 100vh;
+    width: 100vw;
+  }
+}
 

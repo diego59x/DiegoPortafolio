@@ -19,8 +19,8 @@ export default function Home() {
 
     return (
         <div>
-            <div className="row " >
-                <div className="col-6">
+            <div className="row container" >
+                <div className="col-6 ">
                     <Circle 
                         text="I'm a Junior Developer that born in 2001 so you can guess my age"
                         header="Hi, it's Diego"
@@ -29,7 +29,7 @@ export default function Home() {
                     />
                 </div>
                 
-                <div className="col-6">
+                <div className="col-6 sidebar">
                     <CircleSecondary 
                         header="Know Me"
                         dimension="dimensionCircleTwo"

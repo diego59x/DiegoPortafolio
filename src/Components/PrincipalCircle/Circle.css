@@ -18,40 +18,19 @@
 
 .dimensionCircleOne {
     position: relative;
-    width: 500px;
-    height: 500px;
-    margin: 50px;
+    margin: 2vw;
 }
 
 
 .principalCircle {
-    width: 100%;
-    height: 100%;
+    
     border-radius: 50%;
     border-left: 10px solid white;   
     animation: spin 4s linear infinite;   
     box-sizing: border-box;
 }
 
-/* .dimensionCircleTwo {
-    position: relative;
-    width: 150px;
-    height: 150px;
-    margin: 25px;
-}
-
-.secondaryCircle {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    border-left:  double 10px white;   
-    background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)), radial-gradient(circle at top left, #333333, #dd1818);
-    animation: spin 4s linear infinite;
-}
-
-
- */
- .textCircle{
+.textCircle{
     position: absolute;
     display: inline-block;
     top: 50%;
@@ -68,4 +47,29 @@
     left: 50%;
     color: white;
     transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1024px) {
+    .textCircle {
+      width: 30vw;
+      margin-top: 5vh;
+      margin-left: 5vw;
+    }
+
+    .headerCircle{
+        width: 24vw;
+        margin-left: 5vw;
+        color: white;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (max-width: 600px) {
+    .textCircle {
+      background-color: slateblue;
+    }
+
+    .headerCircle{
+        background-color: tan;
+    }
 }

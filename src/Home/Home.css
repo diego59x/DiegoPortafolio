@@ -6,17 +6,34 @@ body {
 
 }
 
-.position {
-    display: flex;
-    flex-direction: row;
-    flex-flow: row wrap;
-    align-content: flex-start;
+.container {
+    color: white;
 }
 
-.tasks {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-left: 50%;
-    background-color: blueviolet;
+.sidebar {
+    color: white;
+}
+@media (max-width: 600px) {
+    .container {
+      display: flex;
+      font-size: 3em;
+      flex-direction: column;
+      align-items: center;
+    }
+}
+
+@media (min-height: 768px) {
+    .sidebar {
+        height: 50vh;
+        margin-top: 40vh;
+        margin-left: -25vw;
+    }
+}
+
+@media (max-width: 1440px) {
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.6em;
+    }
 }
