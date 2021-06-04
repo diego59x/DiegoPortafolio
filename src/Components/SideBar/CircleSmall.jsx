@@ -1,14 +1,18 @@
-import React from 'react';
-import './CircleSmall.css';
-export default function CirclePrincipal({
-    header,
-    onClick
-}){
+import React from 'react'
+import PropTypes from 'prop-types'
+import './CircleSmall.css'
 
-    return(
-        <div className="dimensionCircleTwo">
-            <h1 className="headerCircleTwo"></h1>
-            <button className="btn-5" onClick={onClick}>{header}</button>
-        </div>
-    );
+const CircleSmall = ({ onClick, header }) => {
+  CircleSmall.propTypes = {
+    onClick: PropTypes.func.isRequired,
+    header: PropTypes.string.isRequired,
+  }
+
+  return (
+    <div className="dimensionCircleTwo">
+      <button type="button" className="btn-5" onClick={onClick}>{header}</button>
+    </div>
+  )
 }
+
+export default CircleSmall
