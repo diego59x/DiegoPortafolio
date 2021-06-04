@@ -30,6 +30,14 @@
     box-sizing: border-box;
 }
 
+.headerCircle{
+    position: absolute;
+    display: inline-block;
+    top: 30%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+}
 .textCircle{
     position: absolute;
     display: inline-block;
@@ -39,15 +47,19 @@
     transform: translate(-50%, -50%);
     font-size:20px;
 }
- 
-.headerCircle{
-    position: absolute;
-    display: inline-block;
-    top: 30%;
-    left: 50%;
-    color: white;
-    transform: translate(-50%, -50%);
+
+@media (min-height: 538px) {
+    .textCircle {
+        font-size: 2em;
+    }
+    .headerCircle{
+        width: 24vw;
+        margin-left: 5vw;
+        color: white;
+        transform: translate(-50%, -50%);
+    }
 }
+
 
 @media (max-width: 1024px) {
     .textCircle {

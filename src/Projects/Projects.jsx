@@ -21,24 +21,6 @@ export default function Projects() {
                 </ div>
 
                 <div className="col-6">
-                    <CircleSecondary 
-                        header="Know Me"
-                        dimension="dimensionCircleTwo"
-                        circle="secondaryCircle"
-                        text='Or let my code speak'
-                    />
-                    <CircleSecondary 
-                        header="Contact"
-                        dimension="dimensionCircleTwo"
-                        circle="secondaryCircle"
-                        text='Wanna work together?'
-                    />
-                    <CircleSecondary 
-                        header="Projects"
-                        dimension="dimensionCircleTwo"
-                        circle="secondaryCircle"
-                        text='See what I have made'
-                    />
                 </div>
             </div>
             

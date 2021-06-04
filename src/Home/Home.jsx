@@ -19,44 +19,50 @@ export default function Home() {
 
     return (
         <div>
-            <div className="row container" >
-                <div className="col-6 ">
+            <div className="row " >
+                <div className="col-2"/>
+                <div className="col-5 container ">
                     <Circle 
-                        text="I'm a Junior Developer that born in 2001 so you can guess my age"
+                        text="I'm a Junior Developer that born in 2001 so, you can guess my age"
                         header="Hi, it's Diego"
                         dimension="dimensionCircleOne"
                         circle="notes"
                     />
                 </div>
-                
-                <div className="col-6 sidebar">
+                <div className="col-4"/>
+            </div>
+            <div className="row" >
+                <div className="col-4"/>
+                <div className="col-2 sidebar">
                     <CircleSecondary 
                         header="Know Me"
-                        dimension="dimensionCircleTwo"
                         circle="secondaryCircle"
-                        text='Or let my code speak'
                         onClick={KnowMe}
                     />
                     <CircleSecondary 
                         header="Contact"
-                        dimension="dimensionCircleTwo"
                         circle="secondaryCircle"
-                        text='Wanna work together?'
                         onClick={Contact}
                     />
                     <CircleSecondary 
                         header="Projects"
-                        dimension="dimensionCircleTwo"
                         circle="secondaryCircle"
-                        text='See what I have made'
                         onClick={Projects}
                     />
                 </div>
+                <div className="col-2"/>
+                <div className="col-4 "> 
+                    <div className="texts1">
+                        <div className="HomeText">Or let my code speak</div>
+                    </div>
+                    <div className="texts2">
+                        <div className="HomeText">Wanna work together?</div>
+                    </div>
+                    <div className="texts3">
+                        <div className="HomeText">See what I have made</div>
+                    </div>
+                </div>
             </div>
-            
-            
-        
         </div>
-        
     )
 }
