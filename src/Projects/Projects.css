@@ -1,0 +1,53 @@
+.cartProject {
+    width: 50vw;
+    height: 10vh;
+    color: white;
+    font-size: 2em;
+    text-align: justify;
+    border: 1vw solid white;
+    border-radius: 2vw;
+}
+.headerProject {
+    font-size: 3em;
+    color: white;
+    font-weight: bold;
+}
+
+.circleBack {
+    width: 25vw;
+    height: 25vh;
+}
+img {
+    width: 99vw;
+    object-fit: contain;
+}
+@media (min-height: 538px) {
+    .cartProject {
+        width: 100vw;
+        height: 11vh;
+        color: white;
+        font-size: 2em;
+        text-align: center;
+        justify-content: center;
+        padding: 1vw;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+    .headerProject {
+        font-size: 10em;
+        color: white;
+        font-weight: bold;
+        margin-top: 3vh;
+    }
+    .circleBack {
+        width: 25vw;
+        height: 25vh;
+        font-size: 3em;
+        margin-top: 2vh;
+        margin-left: 2vw;
+    }
+    img {
+        width: 99vw;
+        object-fit: contain;
+    }
+}

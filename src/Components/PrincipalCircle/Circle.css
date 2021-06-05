@@ -1,4 +1,4 @@
-.notes {
+.bigCircle {
     width: 500px;
     height: 500px;
     color: white;
@@ -15,73 +15,35 @@
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } } 
 
-
-.dimensionCircleOne {
-    position: relative;
-    margin: 2vw;
-}
-
-
-.principalCircle {
-    
-    border-radius: 50%;
-    border-left: 10px solid white;   
-    animation: spin 4s linear infinite;   
-    box-sizing: border-box;
-}
-
 .headerCircle{
     position: absolute;
     display: inline-block;
-    top: 30%;
-    left: 50%;
-    color: white;
-    transform: translate(-50%, -50%);
-}
-.textCircle{
-    position: absolute;
-    display: inline-block;
     top: 50%;
-    color: white;
     left: 50%;
-    transform: translate(-50%, -50%);
-    font-size:20px;
+    color: white;
+    width: 40vw;
 }
 
 @media (min-height: 538px) {
-    .textCircle {
-        font-size: 2em;
-    }
     .headerCircle{
-        width: 24vw;
+        width: 50vw;
         margin-left: 5vw;
         color: white;
-        transform: translate(-50%, -50%);
+        font-size: 4em;
+    }
+    .bigCircle {
+        width: 880px;
+        height: 880px;
+        border: double 30px transparent;
     }
 }
 
 
 @media (max-width: 1024px) {
-    .textCircle {
-      width: 30vw;
-      margin-top: 5vh;
-      margin-left: 5vw;
-    }
-
     .headerCircle{
-        width: 24vw;
+        width: 50vw;
         margin-left: 5vw;
         color: white;
         transform: translate(-50%, -50%);
-    }
-}
-
-@media (max-width: 600px) {
-    .textCircle {
-      background-color: slateblue;
-    }
-
-    .headerCircle{
-        background-color: tan;
     }
 }

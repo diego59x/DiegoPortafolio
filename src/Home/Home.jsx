@@ -9,55 +9,61 @@ export default function Home() {
   const KnowMe = () => {
     history.push('/KnowMe')
   }
-  const Contact = () => {
-    history.push('/Contact')
-  }
   const Projects = () => {
     history.push('/Projects')
   }
   return (
-    <div>
-      <div className="row ">
-        <div className="col-2" />
-        <div className="col-5 container ">
-          <Circle
-            text="I'm a Junior Developer that born in 2001 so, you can guess my age"
-            header="Hi, it's Diego"
-            dimension="dimensionCircleOne"
-            circle="notes"
-          />
+    <div className="row">
+      <div>
+        <div className="col-12">
+          <div className="col-10 buttonsTexts">
+            <Circle
+              text="Hi, it&#39;s Diego. I&#39;m a Junior Developer that born in 2001 so, you can guess my age"
+            />
+          </div>
         </div>
-        <div className="col-4" />
       </div>
-      <div className="row">
-        <div className="col-4" />
-        <div className="col-2 sidebar">
-          <CircleSecondary
-            header="Know Me"
-            circle="secondaryCircle"
-            onClick={KnowMe}
-          />
-          <CircleSecondary
-            header="Contact"
-            circle="secondaryCircle"
-            onClick={Contact}
-          />
-          <CircleSecondary
-            header="Projects"
-            circle="secondaryCircle"
-            onClick={Projects}
-          />
-        </div>
-        <div className="col-2" />
-        <div className="col-4 ">
-          <div className="texts1">
-            <div className="HomeText">Or let my code speak</div>
+      <div>
+        <div className="col-12">
+          <div className="buttonsTexts">
+            <div className="col-4 circleHome">
+              <CircleSecondary
+                header="Know Me"
+                onClick={KnowMe}
+              />
+            </div>
+            <div className="col-8 HomeText ">
+              <div className="texts1">
+                Or let my code speak
+              </div>
+            </div>
           </div>
-          <div className="texts2">
-            <div className="HomeText">Wanna work together?</div>
+
+          <div className="buttonsTexts">
+            <div className="col-4 circleHome">
+              <CircleSecondary
+                header="Contact"
+              />
+            </div>
+            <div className="col-8 HomeText ">
+              <div className="texts1">
+                Email: alv19498@uvg.edu.gt
+                Github: diego59x
+              </div>
+            </div>
           </div>
-          <div className="texts3">
-            <div className="HomeText">See what I have made</div>
+          <div className="buttonsTexts">
+            <div className="col-4 circleHome">
+              <CircleSecondary
+                header="Projects"
+                onClick={Projects}
+              />
+            </div>
+            <div className="col-8 HomeText ">
+              <div className="texts1">
+                See what I have made
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -9,7 +9,7 @@ const CircleSmall = ({ onClick, header }) => {
   }
 
   return (
-    <div className="dimensionCircleTwo">
+    <div>
       <button type="button" className="btn-5" onClick={onClick}>{header}</button>
     </div>
   )
