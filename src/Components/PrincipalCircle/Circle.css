@@ -1,8 +1,8 @@
 .bigCircle {
-    width: 500px;
-    height: 500px;
+    width: 130px;
+    height: 130px;
     color: white;
-    border: double 10px transparent;
+    border: double 5px transparent;
     border-radius: 50%;
     background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)), radial-gradient(circle at top left, #ff4e50, #f9d423);
     background-origin: border-box;
@@ -17,11 +17,11 @@
 
 .headerCircle{
     position: absolute;
-    display: inline-block;
     top: 50%;
     left: 50%;
     color: white;
-    width: 40vw;
+    font-size: 0.4em;
+    text-align: center;
 }
 
 @media (min-height: 538px) {
@@ -35,15 +35,44 @@
         width: 880px;
         height: 880px;
         border: double 30px transparent;
+        margin: 4vw;
     }
 }
 
 
 @media (max-width: 1024px) {
     .headerCircle{
-        width: 50vw;
+        width: 40vw;
         margin-left: 5vw;
         color: white;
         transform: translate(-50%, -50%);
+    }
+}
+@media (min-width: 1024px){
+    .bigCircle {
+        margin: 5vw;
+        width: 400px;
+        height: 400px;
+        border: double 10px transparent;
+    }
+    .headerCircle{
+        width: 30vw;
+        margin-left: 5vw;
+        color: white;
+        font-size: 1.5em;
+    }
+}
+@media (min-width: 1440px), not all and  (max-width: 1024px){
+    .bigCircle {
+        margin: 5vw;
+        width: 900px;
+        height: 900px;
+        border: double 10px transparent;
+    }
+    .headerCircle{
+        width: 30vw;
+        margin-left: 5vw;
+        color: white;
+        font-size: 2em;
     }
 }

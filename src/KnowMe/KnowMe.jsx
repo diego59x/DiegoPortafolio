@@ -2,6 +2,7 @@ import React from 'react'
 import { useHistory } from 'react-router-dom'
 import CircleSecondary from '../Components/SideBar/CircleSmall'
 import './KnowMe.css'
+import me from '../Assets/me1.jpeg'
 
 export default function KnowMe() {
   const history = useHistory()
@@ -15,6 +16,7 @@ export default function KnowMe() {
           <CircleSecondary
             header="Back"
             onClick={goBack}
+            classe="boton"
           />
         </div>
         <div className="col-6 headerMe">
@@ -29,6 +31,9 @@ export default function KnowMe() {
             but also make videogames.
             I have made some games for my own and another ones in my university.
             {/* <img src={Scendere} alt="" className="imageProject" href="https://github.com/diego59x/Scendere.git" /> */}
+          </div>
+          <div className="col-6">
+            <img src={me} alt="" className="imgMe" />
           </div>
           <div className="cartMe ">
             I consider myself a fresh person, friendly, determined, persistent,

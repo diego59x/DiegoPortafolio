@@ -30,9 +30,10 @@ export default function Home() {
               <CircleSecondary
                 header="Know Me"
                 onClick={KnowMe}
+                classe="boton"
               />
             </div>
-            <div className="col-8 HomeText ">
+            <div className="col-6 HomeText ">
               <div className="texts1">
                 Or let my code speak
               </div>
@@ -40,12 +41,13 @@ export default function Home() {
           </div>
 
           <div className="buttonsTexts">
-            <div className="col-4 circleHome">
+            <div className="col-4  circleHome">
               <CircleSecondary
                 header="Contact"
+                classe="boton"
               />
             </div>
-            <div className="col-8 HomeText ">
+            <div className="col-6 HomeText ">
               <div className="texts1">
                 Email: alv19498@uvg.edu.gt
                 Github: diego59x
@@ -57,9 +59,10 @@ export default function Home() {
               <CircleSecondary
                 header="Projects"
                 onClick={Projects}
+                classe="boton"
               />
             </div>
-            <div className="col-8 HomeText ">
+            <div className="col-6 HomeText ">
               <div className="texts1">
                 See what I have made
               </div>
