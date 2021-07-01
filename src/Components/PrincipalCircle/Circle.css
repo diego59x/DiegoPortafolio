@@ -24,18 +24,17 @@
     text-align: center;
 }
 
-@media (min-height: 538px) {
+@media (min-width: 320px) {
     .headerCircle{
         width: 50vw;
-        margin-left: 5vw;
         color: white;
         font-size: 4em;
     }
     .bigCircle {
-        width: 880px;
-        height: 880px;
+        width: 800px;
+        height: 800px;
         border: double 30px transparent;
-        margin: 4vw;
+        
     }
 }
 
