@@ -45,29 +45,29 @@ body {
 }
 
 @media (min-width: 320px) {
-    .HomeText {
-        width: 40vw;
-        font-size: 2em;
-        height: 12vh;
-    }
-    .texts1 {
-        font-size: 2em;
-        height: 12vh;
-    }
-    .aber {
-        background-color: #f9d423;
-    }
+    
     .circleHome {
-        width: 35vw;
+        width: 30vw;
         height: 20vh;
         font-size: 2.5em;
         margin-top: 4vh;
-        margin-left: 2vw;
+        margin-left: 4vw;
     }
     .textCircle{
         font-size: 4em;
         text-align: center;
         color: white;
+    }
+    .HomeText {
+        width: 65vw;
+        font-size: 2em;
+        height: 6vh;
+        margin-top: 9vh;
+        margin-left: 2vw;
+    }
+    .texts1 {
+        font-size: 2em;
+        height: 6vh;
     }
 }
 

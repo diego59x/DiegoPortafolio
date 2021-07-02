@@ -29,12 +29,15 @@
         width: 50vw;
         color: white;
         font-size: 4em;
+        top: 52%;
+        left: 45%;
     }
     .bigCircle {
         width: 800px;
         height: 800px;
         border: double 30px transparent;
-        
+        margin-top: 1vh;
+        margin-left: 5vh;
     }
 }
 
