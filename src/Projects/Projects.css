@@ -13,10 +13,6 @@
     font-weight: bold;
 }
 
-.circleBack {
-    width: 25vw;
-    height: 25vh;
-}
 img {
     width: 99vw;
     object-fit: contain;
@@ -39,11 +35,7 @@ img {
         font-weight: bold;
         margin-top: 3vh;
     }
-    .circleBack {
-        width: 20vw;
-        height: 20vh;
-        font-size: 3em;
-    }
+    
     img {
         width: 99vw;
         object-fit: contain;
@@ -81,10 +73,6 @@ img {
     }
 }
 @media (max-width: 1440px) and (max-height: 597px){
-    .circleBack {
-        height: 45vh;
-        font-size: 0.5em;
-    }
     .cartProject {
         height: 22vh;
         color: white;

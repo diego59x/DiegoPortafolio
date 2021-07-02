@@ -54,8 +54,24 @@
   height: 25vh;
   width: 25vw;
 }
+.circleBack {
+  width: 25vw;
+  height: 25vh;
+  text-align: left;
+}
+.backHeader {
+  color: #fff;
+}
 
-
+@media (min-width: 320px){
+  .circleBack {
+    width: 22vw;
+    height: 20vh;
+    font-size: 3em;
+    margin-top: 2vh;
+    margin-left: 4vw;
+  }
+}
 
 @media (max-width: 1440px) and (max-height: 597px){
   .boton {
@@ -101,5 +117,21 @@
     top: 0;
     height: 35vh;
     width: 25vw;
+  }
+}
+@media (max-width: 1440px) and (max-height: 597px){
+  .circleBack {
+      height: 45vh;
+      font-size: 0.5em;
+  }
+}
+
+@media (min-width: 1024px), not all and  (min-width: 768px){
+  .circleBack {
+    width: 25vw;
+    height: 65vh;
+    font-size: 3em;
+    margin-top: 2vh;
+    margin-left: 2vw;
   }
 }

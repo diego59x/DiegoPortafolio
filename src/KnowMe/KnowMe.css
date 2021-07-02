@@ -1,6 +1,6 @@
 .cartMe {
-  width: 50vw;
-  height: 10vh;
+  width: 100vh;
+  height: 100%;
   color: white;
   font-size: 2em;
   text-align: justify;
@@ -17,44 +17,31 @@
   height: 50vh;
 }
 
-@media (min-height: 538px) {
+@media (min-width: 320px) {
     .cartMe {
       width: 100vw;
-      height: 15vh;
+      height: 100%;
       color: white;
-      font-size:5em;
-      text-align: center;
-      justify-self: center;
+      font-size: 2.5em;
       padding: 1vw;
+      text-align: center;
       margin-top: 1vh;
+      margin-left: 1.2vh;
     }
     .headerMe {
-        font-size: 6em;
-        color: white;
-        font-weight: bold;
-        margin-top: 7vh;
+      font-size: 6em;
+      color: white;
+      font-weight: bold;
+      margin-top: 5vh;
+      margin-left: 5vh;
     }
-    .circleBack {
-        width: 25vw;
-        height: 25vh;
-        font-size: 3em;
-        margin-top: 2vh;
-        margin-left: 2vw;
+    .imgMe {
+      width: 99vw;
+      height: 50vh;
+      margin-left: 3vw;
     }
 }
 
-@media (min-width: 425px) {
-  .cartMe {
-    width: 100vw;
-    height: 20vh;
-    color: white;
-    font-size: 2.1em;
-    text-align: center;
-    justify-self: center;
-    padding: 1vw;
-    margin-top: 1vh;
-  }
-}
 @media (min-width: 1024px), not all and  (min-width: 768px){
   .cartMe {
     width: 100vw;
