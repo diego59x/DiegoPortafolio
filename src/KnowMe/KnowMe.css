@@ -59,13 +59,6 @@
       font-weight: bold;
       margin-top: 12vh;
   }
-  .circleBack {
-      width: 25vw;
-      height: 25vh;
-      font-size: 3em;
-      margin-top: 2vh;
-      margin-left: 2vw;
-  }
 }
 @media (max-width: 1440px) and (max-height: 597px){
   .cartMe {
@@ -84,7 +77,4 @@
       font-weight: bold;
       margin-top: 12vh;
   }
-  .circleBack {
-    padding-left: 10vw;
-}
 }

@@ -64,8 +64,7 @@ body {
 
 }
 
-
-@media (min-width: 1024px), not all and  (min-width: 768px){
+@media (min-width: 1024px), not all and (min-width: 768px){
     .circleHome {
         width: 30vw;
         height: 50vh;
@@ -75,10 +74,8 @@ body {
     
 }
 
-
 @media (max-width: 1440px) and (max-height: 597px){
     
-
     .circleHome {
         width: 5vw;
         height: 50vh;

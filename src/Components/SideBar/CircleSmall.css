@@ -73,6 +73,15 @@
   }
 }
 
+@media (min-width: 1024px), not all and  (min-width: 768px){
+  .circleBack {
+    width: 30vw;
+    height: 30vw;
+    font-size: 3em;
+    margin-top: 2vh;
+  }
+}
+
 @media (max-width: 1440px) and (max-height: 597px){
   .boton {
       width: 100%;
@@ -82,20 +91,23 @@
       padding-left: 1vw;
       border: 2px solid #fff;
   }
-}
-@media (max-width: 1440px) and (max-height: 597px){
   .circleBack {
       height: 45vh;
       font-size: 0.5em;
   }
 }
-
-@media (min-width: 1024px), not all and  (min-width: 768px){
+@media(min-width: 1440px) and (min-width: 1024px){
   .circleBack {
-    width: 25vw;
-    height: 65vh;
+    width: 30vw;
+    height: 30vw;
     font-size: 3em;
-    margin-top: 2vh;
-    margin-left: 2vw;
+  }
+}
+
+@media (min-width: 2560px) {
+  .circleBack {
+    width: 30vw;
+    height: 30vw;
+    font-size: 3em;
   }
 }

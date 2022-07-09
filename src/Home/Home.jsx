@@ -12,6 +12,9 @@ export default function Home() {
   const Projects = () => {
     history.push('/Projects')
   }
+  const Contact = () => {
+    history.push('/Contact')
+  }
   return (
     <div>
       <div className="nav nav-justified">
@@ -35,6 +38,7 @@ export default function Home() {
         <div className="col-xs-4 circleHome">
           <CircleSecondary
             header="Contact"
+            onClick={Contact}
             textRight="Let's work together"
             classe="boton"
           />

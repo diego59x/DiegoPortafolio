@@ -13,23 +13,20 @@ export default function Contact() {
   return (
     <div>
       <div className="row ">
-        <div className="col-4 circleBack">
+        <div className="col-xs-12 circleBack">
           <CircleSecondary
             header="Back"
             onClick={goBack}
+            classe="boton"
           />
         </div>
       </div>
       <div className="row ">
         <div className="col-12">
-          <div className="col-4 containerContact">
+          <div className="col-xs-4 containerContact">
             <Circle
-              text=""
+              text="diegoalvarez 1237@hotmail.com Github: diego59x Linkedin: Diego Alvarez"
             />
-          </div>
-          <div className="col-4">
-            diegoalvarez1237@hotmail.com
-            Github: Diego59x
           </div>
         </div>
       </div>
