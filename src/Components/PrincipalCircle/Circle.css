@@ -1,6 +1,6 @@
 .bigCircle {
-    width: 130px;
-    height: 130px;
+    width: 46vw;
+    height: 45vw;
     color: white;
     border: double 5px transparent;
     border-radius: 50%;
@@ -17,64 +17,100 @@
 
 .headerCircle{
     position: absolute;
-    top: 50%;
-    left: 50%;
     color: white;
     font-size: 0.4em;
     text-align: center;
 }
 
+.containerCircle {
+    display: flex;
+    width: 46vw;
+    height: 45vw;
+    align-items: center;
+    justify-content: center;
+}
+
 @media (min-width: 320px) {
     .headerCircle{
-        width: 50vw;
+        width: 70vw;
         color: white;
         font-size: 4em;
-        top: 52%;
-        left: 45%;
     }
+    
     .bigCircle {
-        width: 800px;
-        height: 800px;
+        width: 80vw;
+        height: 80vw;
         border: double 30px transparent;
-        margin-top: 1vh;
-        margin-left: 5vh;
     }
+
+    .containerCircle {
+        width: 100vw;
+        height: 75vw;
+        margin-top: 2vh;
+    }
+    
 }
 
 
-@media (max-width: 1024px) {
-    .headerCircle{
-        width: 40vw;
-        margin-left: 5vw;
-        color: white;
-        transform: translate(-50%, -50%);
-    }
-}
-@media (min-width: 1024px){
+@media (min-width: 1024px), not all and  (min-width: 768px){
     .bigCircle {
-        margin: 5vw;
-        width: 400px;
-        height: 400px;
         border: double 10px transparent;
     }
     .headerCircle{
         width: 30vw;
-        margin-left: 5vw;
         color: white;
-        font-size: 1.5em;
+        font-size: 3em;
+    }
+    .containerCircle {
+        width: 100vw;
+        height: 75vw;
+        margin-top: 5vh;
     }
 }
-@media (min-width: 1440px), not all and  (max-width: 1024px){
+
+@media (max-width: 1440px) and (max-height: 597px){
     .bigCircle {
-        margin: 5vw;
-        width: 900px;
-        height: 900px;
+        margin: 2vw;
         border: double 10px transparent;
     }
     .headerCircle{
         width: 30vw;
-        margin-left: 5vw;
+        margin: 0;
         color: white;
         font-size: 2em;
+    }
+}
+
+@media (min-width: 1440px) and  (min-width: 1024px){
+    .bigCircle {
+        width: 45vw;
+        height: 45vw;
+        border: double 10px transparent;
+    }
+    .headerCircle{
+        width: 30vw;
+        color: white;
+        font-size: 3em;
+    }
+    .containerCircle {
+        width: 45vw;
+        height: 45vw;
+        margin-top: 1vh;
+    }
+}
+
+@media (min-width: 2560px) {
+    .bigCircle {
+        width: 36vw;
+        height: 36vw;
+    }
+    .headerCircle{
+        width: 30vw;
+        color: white;
+    }
+    .containerCircle {
+        width: 36vw;
+        height: 36vw;
+        margin-top: 1vh;
     }
 }

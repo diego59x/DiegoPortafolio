@@ -2,16 +2,30 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './CircleSmall.css'
 
-const CircleSmall = ({ onClick, header, classe }) => {
+const CircleSmall = ({
+  onClick, header, textRight, classe,
+}) => {
   CircleSmall.propTypes = {
     onClick: PropTypes.func.isRequired,
     header: PropTypes.string.isRequired,
+    textRight: PropTypes.string.isRequired,
     classe: PropTypes.string.isRequired,
   }
 
   return (
-    <div>
-      <div role="button" tabIndex="0" className={`btn-5 ${classe}`} aria-hidden="true" onClick={onClick}>{header}</div>
+    <div className="containerCircleSmall">
+      <div className="containerButton">
+        <div role="button" tabIndex="0" className={`btn-5 ${classe}`} aria-hidden="true" onClick={onClick}>
+          <div className="headerCircleSmall">
+            <div>
+              {header}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="textRightDeco">
+        {textRight}
+      </div>
     </div>
   )
 }

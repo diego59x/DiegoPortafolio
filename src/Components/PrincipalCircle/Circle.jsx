@@ -10,7 +10,7 @@ const CirclePrincipal = ({
   }
 
   return (
-    <div>
+    <div className="containerCircle">
       <div className="bigCircle" />
       <div className="headerCircle">{text}</div>
     </div>

@@ -26,28 +26,18 @@ export default function Home() {
           <CircleSecondary
             header="Know Me"
             onClick={KnowMe}
+            textRight="Or let my code speak"
             classe="boton"
           />
-        </div>
-        <div className="col-xs-4  HomeText ">
-          <div className="texts1">
-            Or let my code speak
-          </div>
         </div>
       </div>
       <div className="row">
         <div className="col-xs-4 circleHome">
           <CircleSecondary
             header="Contact"
+            textRight="Let's work together"
             classe="boton"
           />
-        </div>
-        <div className="col-xs-4 HomeText ">
-          <div className="texts1">
-            Call Me
-            {/* Email: alv19498@uvg.edu.gt
-            Github: diego59x */}
-          </div>
         </div>
       </div>
       <div className="row">
@@ -55,13 +45,9 @@ export default function Home() {
           <CircleSecondary
             header="Projects"
             onClick={Projects}
+            textRight="See what I have made"
             classe="boton"
           />
-        </div>
-        <div className="col-xs-4  HomeText ">
-          <div className="texts1">
-            See what I have made
-          </div>
         </div>
       </div>
     </div>
