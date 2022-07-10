@@ -52,19 +52,20 @@
 }
 
 
-@media (min-width: 1024px), not all and  (min-width: 768px){
+@media (min-width: 1024px) and  (max-width: 1439px){
     .bigCircle {
-        border: double 10px transparent;
+        width: 40vw;
+        height: 40vw;
     }
     .headerCircle{
         width: 30vw;
         color: white;
-        font-size: 3em;
+        font-size: 2em;
     }
     .containerCircle {
-        width: 100vw;
-        height: 75vw;
-        margin-top: 5vh;
+        width: 45vw;
+        height: 45vw;
+        margin-left: 1vw;
     }
 }
 

@@ -6,6 +6,9 @@ import './Contact.css'
 
 export default function Contact() {
   const history = useHistory()
+  const classDesktop = 'circleSelectDesktop'
+  const classMobile = 'circleBack'
+
   const goBack = () => (
     history.goBack()
   )
@@ -13,11 +16,12 @@ export default function Contact() {
   return (
     <div>
       <div className="row ">
-        <div className="col-xs-12 circleBack">
+        <div className="col-xs-12">
           <CircleSecondary
             header="Back"
             onClick={goBack}
-            classe="boton"
+            classe={window.isDesktop ? classDesktop : classMobile}
+            textRight=""
           />
         </div>
       </div>

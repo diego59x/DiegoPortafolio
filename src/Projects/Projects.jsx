@@ -11,17 +11,20 @@ import emprende from '../Assets/emprende.png'
 
 export default function Projects() {
   const history = useHistory()
+  const classDesktop = 'circleSelectDesktop'
+  const classMobile = 'circleBack'
   const goBack = () => (
     history.goBack()
   )
   return (
     <div>
       <div className="row">
-        <div className="col-4 circleBack">
+        <div className="col-4">
           <CircleSecondary
             header="Back"
             onClick={goBack}
-            classe="boton"
+            classe={window.isDesktop ? classDesktop : classMobile}
+            textRight=""
           />
         </div>
         <div className="col-6 headerProject">

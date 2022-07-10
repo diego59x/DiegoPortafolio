@@ -6,20 +6,24 @@ import me from '../Assets/me1.jpeg'
 
 export default function KnowMe() {
   const history = useHistory()
+  const classDesktop = 'circleSelectDesktop'
+  const classMobile = 'circleBack'
+
   const goBack = () => (
     history.goBack()
   )
   return (
     <div>
       <div className="row ">
-        <div className="col-xs-6 circleBack">
+        <div className="col-4">
           <CircleSecondary
             header="Back"
             onClick={goBack}
-            classe="boton"
+            classe={window.isDesktop ? classDesktop : classMobile}
+            textRight=""
           />
         </div>
-        <div className="col-xs-6 headerMe">
+        <div className="col-6 headerMe">
           Know Me
         </div>
       </div>
