@@ -15,7 +15,7 @@ const CircleSmall = ({
   return (
     <div className="containerCircleSmall">
       <div className="containerButton">
-        <div role="button" tabIndex="0" className={`btn-5 ${classe}`} aria-hidden="true" onClick={onClick}>
+        <div role="button" tabIndex="0" className={classe} aria-hidden="true" onClick={onClick}>
           <div className="headerCircleSmall">
             <div>
               {header}
@@ -23,7 +23,7 @@ const CircleSmall = ({
           </div>
         </div>
       </div>
-      <div className="textRightDeco">
+      <div className={` ${classe === 'circleBack' ? 'textRightTitle' : 'textRightDeco'} `}>
         {textRight}
       </div>
     </div>

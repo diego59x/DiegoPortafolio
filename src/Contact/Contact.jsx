@@ -6,21 +6,17 @@ import './Contact.css'
 
 export default function Contact() {
   const history = useHistory()
-  const classDesktop = 'circleSelectDesktop'
-  const classMobile = 'circleBack'
-
   const goBack = () => (
     history.goBack()
   )
-
-  return (
+  const mobileView = () => (
     <div>
       <div className="row ">
         <div className="col-xs-12">
           <CircleSecondary
             header="Back"
             onClick={goBack}
-            classe={window.isDesktop ? classDesktop : classMobile}
+            classe="circleBack"
             textRight=""
           />
         </div>
@@ -34,6 +30,32 @@ export default function Contact() {
           </div>
         </div>
       </div>
+    </div>
+  )
+
+  const desktopView = () => (
+    <div className="containerPageContact">
+      <CircleSecondary
+        header="Back"
+        onClick={goBack}
+        classe="circleSelectDesktop"
+        textRight=""
+      />
+      <div className="containerContact">
+        <Circle
+          text="diegoalvarez 1237@hotmail.com Github: diego59x Linkedin: Diego Alvarez"
+        />
+      </div>
+    </div>
+  )
+
+  return (
+    <div>
+      {window.isDesktop ? (
+        desktopView()
+      ) : (
+        mobileView()
+      )}
     </div>
   )
 }

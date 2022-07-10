@@ -1,3 +1,7 @@
+.containerPageContact {
+    display: flex;
+}
+
 .containerContact {
     display: flex;
     text-align: center;

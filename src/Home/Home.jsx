@@ -30,7 +30,7 @@ export default function Home() {
     history.push('/Contact')
   }
 
-  const mobilView = () => (
+  const mobileView = () => (
     <div>
       <div className="nav nav-justified">
         <div className="col-xs-10 col-sm-12">
@@ -74,7 +74,7 @@ export default function Home() {
   )
 
   const desktopView = () => (
-    <div>
+    <div className="homeContainer">
       <div className="row">
         <div className="nav nav-justified">
           <div className="col-md-12 col-lg-12  ">
@@ -113,7 +113,7 @@ export default function Home() {
       {isDesktop ? (
         desktopView()
       ) : (
-        mobilView()
+        mobileView()
       )}
     </div>
   )

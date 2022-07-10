@@ -1,87 +1,70 @@
+::-webkit-scrollbar {
+    display: none;
+}
+.containerCartProject {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .cartProject {
-    width: 40vw;
-    height: 10vh;
+    width: 100vw;
+    height: auto;
     color: white;
     font-size: 2em;
-    text-align: justify;
+    text-align: center;
     border: 1vw solid white;
     border-radius: 2vw;
+    margin-bottom: 4vh;
 }
 .headerProject {
-    font-size: 3em;
+    font-size: 1.5em;
     color: white;
     font-weight: bold;
+    margin-bottom: 4vh;
 }
 
 img {
-    width: 99vw;
+    width: 100%;
+    height: auto;
     object-fit: contain;
 }
-@media (min-height: 538px) {
-    .cartProject {
-        width: 100vw;
-        height: 11vh;
-        color: white;
-        font-size: 2em;
-        text-align: center;
-        justify-content: center;
-        padding: 1vw;
-        margin-top: 1vh;
-        margin-bottom: 1vh;
-    }
-    .headerProject {
-        font-size: 10em;
-        color: white;
-        font-weight: bold;
-        margin-top: 3vh;
-    }
-    
-    img {
-        width: 99vw;
-        object-fit: contain;
-    }
+
+@media (min-width: 320px) {
 }
 
 @media (min-width: 1024px), not all and  (min-width: 768px){
-    .cartProject {
-        width: 100vw;
-        height: 25vh;
-        color: white;
-        font-size: 2em;
-        text-align: center;
-        justify-content: center;
-        padding: 1vw;
-        margin-top: 1vh;
-        margin-bottom: 1vh;
-    }
     .headerProject {
-        font-size: 8em;
-        color: white;
-        font-weight: bold;
-        margin-top: 3vh;
+        height: 20vh;
     }
-    img {
-        width: 99vw;
-        object-fit: contain;
+    .cartProject {
+        width: 30vw;
     }
 }
 @media (max-width: 1440px) and (max-height: 597px){
-    .cartProject {
-        height: 22vh;
-        color: white;
-        font-size: 0.4em;
-        text-align: center;
-        justify-self: center;
-        padding: 1vw;
-        margin-top: 1vh;
-    }
     .headerProject {
-        font-size: 1.7em;
-        color: white;
-        font-weight: bold;
-        margin-top: 12vh;
+        height: 30vh;
     }
-    img {
-        margin-left: -5vw;
+    .cartProject {
+        width: 30vw;
     }
-  }
+}
+
+@media(min-width: 1440px) and (min-width: 1024px){
+    .headerProject {
+        height: 30vh;
+    }
+    .cartProject {
+        width: 30vw;
+    }
+}
+
+@media (min-width: 2560px) {
+    .headerProject {
+        height: 35vh;
+    }
+    .cartProject {
+        width: 30vw;
+    }
+}

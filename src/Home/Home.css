@@ -4,6 +4,9 @@ body {
     width: 100vw;
     overflow-x: hidden;
 }
+.homeContainer {
+    overflow: hidden;
+}
 .textCircle{
     color: white;
     width: 50vw;
