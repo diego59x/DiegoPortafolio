@@ -17,9 +17,7 @@ const CircleSmall = ({
       <div className="containerButton">
         <div role="button" tabIndex="0" className={classe} aria-hidden="true" onClick={onClick}>
           <div className="headerCircleSmall">
-            <div>
-              {header}
-            </div>
+            {header}
           </div>
         </div>
       </div>

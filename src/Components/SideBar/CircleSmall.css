@@ -1,6 +1,7 @@
 
 .circleSelect, .circleSelectDesktop, .circleBack {
   background: none;
+  display: flex;
   width: 30vw;
   font-size: 1.2em;
   height: 28vw;
@@ -29,7 +30,6 @@
 }
 
 .headerCircleSmall{
-  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
