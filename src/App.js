@@ -1,4 +1,6 @@
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import {
+  BrowserRouter, Switch, Route, Redirect,
+} from 'react-router-dom'
 import React from 'react'
 import Home from './Home/Home'
 import KnowMe from './KnowMe/KnowMe'
@@ -14,6 +16,7 @@ export default function App() {
           <Route path="/Projects" component={Projects} />
           <Route path="/Contact" component={Contact} />
           <Route exact path="/" component={Home} />
+          <Route path="*" element={<Redirect to="/" />} />
         </Switch>
       </BrowserRouter>
     </div>

@@ -2,7 +2,6 @@ import React from 'react'
 import { useHistory } from 'react-router-dom'
 import CircleSecondary from '../Components/SideBar/CircleSmall'
 import './KnowMe.css'
-import me from '../Assets/me1.jpeg'
 
 export default function KnowMe() {
   const history = useHistory()
@@ -33,11 +32,6 @@ export default function KnowMe() {
               but also make videogames.
               I have made some games for my own and another ones in my university.
             </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-12 ">
-            <img src={me} alt="" className="imgMe" />
           </div>
         </div>
         <div className="row">

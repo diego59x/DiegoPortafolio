@@ -35,8 +35,7 @@ export default function Home() {
       <div className="nav nav-justified">
         <div className="col-xs-10 col-sm-12">
           <Circle
-            text="Hi, it&#39;s Diego. I&#39;m a Junior Developer that born in 2001 so,
-            you can guess my age"
+            text="Hi, it&#39;s Diego. I&#39;m a Junior Developer with experience on Roku, SmartTv&#39;s, React and Unity"
           />
         </div>
       </div>
@@ -79,8 +78,7 @@ export default function Home() {
         <div className="nav nav-justified">
           <div className="col-md-12 col-lg-12  ">
             <Circle
-              text="Hi, it&#39;s Diego. I&#39;m a Junior Developer that born in 2001 so,
-              you can guess my age"
+              text="Hi, it&#39;s Diego. I&#39;m a Junior Developer with experience on Roku, SmartTv&#39;s, React and Unity"
             />
           </div>
         </div>
