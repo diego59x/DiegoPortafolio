@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useMemo, useState, useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
 import './Projects.css'
+import { useFirebaseApp } from 'reactfire'
 import CircleSecondary from '../Components/SideBar/CircleSmall'
 import Scendere from '../Assets/autumnFall.jpeg'
 import Swap from '../Assets/swap.png'
@@ -11,16 +12,39 @@ import gdeal from '../Assets/gdeal.png'
 import overCooked from '../Assets/overCooked.png'
 import overCooked2 from '../Assets/overCooked2.png'
 import video from '../Assets/expandableCarousel.mp4'
+import 'firebase/firestore'
 
 export default function Projects() {
+  const firebase = useFirebaseApp()
+  const db = firebase.firestore()
+  const dbPersonalProjects = useMemo(() => db.collection('PersonalProjects'), [])
+  const [projects, setProjects] = useState([])
+
   const history = useHistory()
   const classDesktop = 'circleSelectDesktop'
   const classMobile = 'circleBack'
   const goBack = () => (
     history.goBack()
   )
+
+  const fetchProjects = async () => {
+    const projectsDb = []
+    dbPersonalProjects.onSnapshot((snapshot) => {
+      snapshot.forEach((product) => {
+        projectsDb.push(product.data())
+      })
+      setProjects(projectsDb)
+    })
+  }
+  useEffect(() => {
+    fetchProjects()
+  }, [])
+
   return (
     <div>
+      {projects?.map((detail) => (
+        console.log(detail)
+      ))}
       <div className="row">
         <div className="col-xs-4 headerProject">
           <CircleSecondary

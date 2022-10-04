@@ -11,7 +11,7 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(png|jpe?g|gif)$/i,
+        test: /\.(png|jpe?g|gif|mov|mp4)$/i,
         use: [
           {
             loader: 'file-loader',
@@ -29,17 +29,6 @@ module.exports = {
           // Compiles Sass to CSS
           'sass-loader',
         ],
-      },
-      {
-        test: /\.(mov|mp4)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]'
-            }  
-          }
-        ]
       },
     ],
   },
