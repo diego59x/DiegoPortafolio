@@ -78,7 +78,7 @@ export default function Home() {
         <div className="nav nav-justified">
           <div className="col-md-12 col-lg-12  ">
             <Circle
-              text="Hi, it&#39;s Diego. I&#39;m a Junior Developer with experience on Roku, SmartTv&#39;s, React and Unity"
+              text="Hi, it&#39;s Diego. I&#39;m a FrontEnd Developer with experience on Roku, SmartTv&#39;s, React and Unity"
             />
           </div>
         </div>

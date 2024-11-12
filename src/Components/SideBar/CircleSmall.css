@@ -1,7 +1,8 @@
 
-.circleSelect, .circleSelectDesktop, .circleBack {
+.circleSelect, .circleSelectDesktop, .circleBack, .github-link, .linkdein-link {
   background: none;
   display: flex;
+  align-items: center;
   width: 30vw;
   font-size: 1.2em;
   height: 28vw;
@@ -11,10 +12,34 @@
   border-radius: 50% !important;
 }
 
+.github-link, .linkdein-link {
+  width: 28vw;
+  height: 26vw;
+}
+
 .circleSelect:hover, .circleSelectDesktop:hover, .circleBack:hover {
   background-color: white;
   color: black;
   font-weight: 700;
+}
+
+.github-link:hover, .linkdein-link:hover {
+  color: #ffffff;
+  background-color: #333;
+}
+
+.github-link::before, .linkdein-link::before {
+  content: "🔗";
+  margin-left: 1.5vw;
+  transition: 0.3s;
+}
+
+.github-link:hover::before {
+  content: "🚀";
+}
+
+.linkdein-link:hover::before {
+  content: "💼";
 }
 
 .backHeader {
@@ -87,9 +112,9 @@
     width: 15vw;
     height: 15vw;
   }
-  .circleSelectDesktop {
-    width: 15vw;
-    height: 15vw;
+  .circleSelectDesktop, .github-link, .linkdein-link {
+    width: 14vw;
+    height: 14vw;
     border: 2px solid #fff;
   }
   .headerCircleSmall{
@@ -130,7 +155,7 @@
     width: 12vw;
     height: 12vw;
   }
-  .circleSelectDesktop {
+  .circleSelectDesktop, .github-link, .linkdein-link {
     width: 12vw;
     height: 12vw;
     margin: 0;
@@ -161,5 +186,11 @@
   .circleBack {
     width: 12vw;
     height: 12vw;
+  }
+  .headerCircleSmall{
+    font-size: 2em;
+  }
+  .textRightDeco{
+    font-size: 2em;
   }
 }

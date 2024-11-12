@@ -10,6 +10,8 @@ export default function Projects() {
   const db = firebase.firestore()
   const dbPersonalProjects = useMemo(() => db.collection('PersonalProjects'), [])
   const [projects, setProjects] = useState([])
+  const [isDesktop, setDesktop] = useState(window.innerWidth > 1023)
+  window.isDesktop = isDesktop
 
   const history = useHistory()
   const classDesktop = 'circleSelectDesktop'
@@ -17,6 +19,15 @@ export default function Projects() {
   const goBack = () => (
     history.goBack()
   )
+
+  const updateMedia = () => {
+    setDesktop(window.innerWidth > 1023)
+  }
+
+  useEffect(() => {
+    window.addEventListener('resize', updateMedia)
+    return () => window.removeEventListener('resize', updateMedia)
+  })
 
   const fetchProjects = async () => {
     const projectsDb = []

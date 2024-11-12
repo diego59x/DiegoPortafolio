@@ -2,10 +2,18 @@
     display: flex;
 }
 
+.containerPageContactMobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
 .containerContact {
     display: flex;
-    text-align: center;
+    align-items: center;
     width: 100vw;
+    color: white;
 }
 @media (min-height: 538px) {
     .containerContact {
