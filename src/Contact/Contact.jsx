@@ -24,7 +24,9 @@ export default function Contact() {
     history.goBack()
   )
 
-  const SendEmail = () => {}
+  const SendEmail = () => (
+    window.open('mailto:diegoalvarez59@icloud.com', '_blank')
+  )
 
   const openGithub = () => (
     window.open('https://github.com/diego59x', '_blank', 'noopener,noreferrer')

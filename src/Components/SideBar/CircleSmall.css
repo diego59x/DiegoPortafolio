@@ -10,35 +10,42 @@
   font-weight: 600;
   border: 4px solid #fff;
   border-radius: 50% !important;
+  cursor: none;
 }
 
 .github-link, .linkdein-link {
   width: 28vw;
+  cursor: none;
   height: 26vw;
 }
 
 .circleSelect:hover, .circleSelectDesktop:hover, .circleBack:hover {
   background-color: white;
+  cursor: none;
   color: black;
   font-weight: 700;
 }
 
 .github-link:hover, .linkdein-link:hover {
   color: #ffffff;
+  cursor: none;
   background-color: #333;
 }
 
 .github-link::before, .linkdein-link::before {
   content: "🔗";
+  cursor: none;
   margin-left: 1.5vw;
   transition: 0.3s;
 }
 
 .github-link:hover::before {
+  cursor: none;
   content: "🚀";
 }
 
 .linkdein-link:hover::before {
+  cursor: none;
   content: "💼";
 }
 
@@ -60,6 +67,7 @@
   align-items: center;
   width: 30vw;
   height: 27vw;
+  cursor: none;
 }
 .containerButton {
   width: 30vw;
