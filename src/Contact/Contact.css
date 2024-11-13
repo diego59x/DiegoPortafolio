@@ -9,11 +9,59 @@
     margin-top: 5vh;
 }
 
+.circleContact {
+    width: 45vw;
+    height: 25vh;
+    margin-top: 2vh;
+}
+
+.headerContact {
+    font-size: 1.5em;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 4vh;
+}
+
 .containerContact {
     display: flex;
     align-items: center;
     width: 100vw;
     color: white;
+}
+
+@media (min-width: 320px) {
+    .circleContact {
+        width: 99vw;
+        height: 13vh;
+        font-size: 2em;
+        margin-left: 4vw;
+    }
+}
+@media (min-width: 425px) {
+    .circleContact {
+        height: auto;
+        margin-left: 4vw;
+    }
+}
+
+
+@media (min-width: 1024px), not all and (min-width: 768px){
+    .circleContact {
+        width: 30vw;
+        height: 50vh;
+        font-size: 2em;
+        margin-left: 2vw;
+    }
+    
+}
+
+@media (max-width: 1440px) and (max-height: 597px){
+    .circleContact {
+        width: 5vw;
+        height: 50vh;
+        font-size: 0.5em;
+    }
+
 }
 @media (min-height: 538px) {
     .containerContact {

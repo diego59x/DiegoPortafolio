@@ -1,0 +1,29 @@
+.circleCursor {
+    position: fixed;
+    width: 1200px;
+    height: 1200px;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: transform 0.1s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle, rgba(71, 71, 71, 0.274), transparent 80%);
+}
+
+.circleInsideTwo {
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle, rgba(80, 80, 80, 0.945), transparent 80%);
+}
+
+.circleInsideOne {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(95, 95, 95, 0.904), transparent 80%);
+}

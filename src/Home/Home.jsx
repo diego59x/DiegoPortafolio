@@ -3,6 +3,7 @@ import './Home.css'
 import { useHistory } from 'react-router-dom'
 import Circle from '../Components/PrincipalCircle/Circle'
 import CircleSecondary from '../Components/SideBar/CircleSmall'
+import CustomeCursor from '../Components/CustomeCursor/CustomeCursor'
 
 export default function Home() {
   const history = useHistory()
@@ -35,16 +36,16 @@ export default function Home() {
       <div className="nav nav-justified">
         <div className="col-xs-10 col-sm-12">
           <Circle
-            text="Hi, it&#39;s Diego. I&#39;m a Junior Developer with experience on Roku, SmartTv&#39;s, React and Unity"
+            text="I&#39;m a Computer Science Engineer - FrontEnd Developer with experience on Roku, SmartTv&#39;s, React and Unity"
           />
         </div>
       </div>
       <div className="row">
         <div className="col-xs-4 circleHome">
           <CircleSecondary
-            header="Know Me"
+            header="Experience"
             onClick={KnowMe}
-            textRight="Or let my code speak"
+            textRight="Get to know me"
             classe="circleSelect"
           />
         </div>
@@ -74,19 +75,20 @@ export default function Home() {
 
   const desktopView = () => (
     <div className="homeContainer">
+      <CustomeCursor />
       <div className="row">
         <div className="nav nav-justified">
           <div className="col-md-12 col-lg-12  ">
             <Circle
-              text="Hi, it&#39;s Diego. I&#39;m a FrontEnd Developer with experience on Roku, SmartTv&#39;s, React and Unity"
+              text="Hi, it&#39;s Diego. I&#39;m a Computer Science Engineer - FrontEnd Developer with experience on Roku, SmartTv&#39;s, React and Unity"
             />
           </div>
         </div>
         <div className="col-xs-4">
           <CircleSecondary
-            header="Know Me"
+            header="Experience"
             onClick={KnowMe}
-            textRight="Or let my code speak"
+            textRight="Get to know me"
             classe="circleSelectDesktop"
           />
           <CircleSecondary

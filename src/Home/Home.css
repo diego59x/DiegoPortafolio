@@ -1,6 +1,7 @@
 body {
     margin: 0;
-    background-color: rgb(0, 0, 0) !important;
+    cursor: none;
+    background-color: rgb(68, 65, 65) !important;
     width: 100vw;
     overflow-x: hidden;
 }
@@ -67,6 +68,14 @@ body {
 
 }
 
+@media (min-width: 425px) {
+    .circleHome {
+        font-size: 2.5em;
+        height: auto;
+        margin-left: 4vw;
+    }
+}
+
 @media (min-width: 1024px), not all and (min-width: 768px){
     .circleHome {
         width: 30vw;
@@ -74,7 +83,6 @@ body {
         font-size: 2.5em;
         margin-left: 2vw;
     }
-    
 }
 
 @media (max-width: 1440px) and (max-height: 597px){

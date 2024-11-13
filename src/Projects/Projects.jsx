@@ -3,6 +3,7 @@ import { useHistory } from 'react-router-dom'
 import './Projects.css'
 import { useFirebaseApp } from 'reactfire'
 import CircleSecondary from '../Components/SideBar/CircleSmall'
+import CustomeCursor from '../Components/CustomeCursor/CustomeCursor'
 import 'firebase/firestore'
 
 export default function Projects() {
@@ -35,7 +36,8 @@ export default function Projects() {
       snapshot.forEach((product) => {
         projectsDb.push(product.data())
       })
-      setProjects(projectsDb)
+      const sortedProjects = projectsDb.sort((fItem, sItem) => fItem.ordinality - sItem.ordinality)
+      setProjects(sortedProjects)
     })
   }
   useEffect(() => {
@@ -44,6 +46,7 @@ export default function Projects() {
 
   return (
     <div>
+      <CustomeCursor />
       <div className="row">
         <div className="col-xs-4 headerProject">
           <CircleSecondary
@@ -59,7 +62,7 @@ export default function Projects() {
           {projects?.map((detail) => {
             if (detail.isVideo) {
               return (
-                <div className="cartProject">
+                <div key={detail.ordinality} className="cartProject">
                   {detail.Description}
                   <a href={detail.url_github}>
                     <video width="420" height="240" autoPlay muted loop>
@@ -71,7 +74,7 @@ export default function Projects() {
               )
             }
             return (
-              <div className="cartProject">
+              <div key={detail.ordinality} className="cartProject">
                 {detail.Description}
                 <a href={detail.url_github}>
                   <img src={detail.url_image[0]} alt="" />
